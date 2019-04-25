@@ -1,0 +1,23 @@
+body{
+background-color: grey;
+}
+
+body.html{
+overflow:hidden;
+}
+
+.landing-page{
+background-image: url("../images/white.jpg");
+width: 100vw;
+height:88.7vh;
+}
+
+.landing-page h1, h3{
+color: white;
+text-align : center;
+padding-top: 100px;
+font-family: 'Monoton', cursive;
+}
+.navbar{
+background-color: #e3f2fd;
+}
