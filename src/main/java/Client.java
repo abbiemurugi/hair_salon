@@ -12,7 +12,7 @@ public Client(String firstName, String lastName, String gender, int stylistId){
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
-        //this.id = id;
+        this.id = id;
         this.stylistId = stylistId;
         }
 
@@ -38,7 +38,7 @@ public Client(String firstName, String lastName, String gender, int stylistId){
 
 
     public static List<Client> all(){
-        String sql = "SELECT id, firstname FROM clients";
+        String sql = "SELECT * FROM clients";
         try(Connection con = DB.sql2o.open()){
             return con.createQuery(sql).executeAndFetch(Client.class );
         }
@@ -53,17 +53,19 @@ public Client(String firstName, String lastName, String gender, int stylistId){
 //            return this.getfirstName().equals(newClient.getfirstName()) &&
 //                    this.getlastName().equals(newClient.getlastName()) &&
 //                    this.getgender().equals(newClient.getgender()) &&
-                  return   this.getId() == newClient.getId();
+//                    this.getgender().equals(newClient.getstylistId()) &&
+                  return this.getId() == newClient.id;
         }
     }
 
     public void save() {
         try(Connection con = DB.sql2o.open()) {
-            String sql = "INSERT INTO clients (firstname, lastname, gender) VALUES (:firstname, :lastname, :gender)";
+            String sql = "INSERT INTO clients (firstname, lastname, gender, stylistid) VALUES (:firstname, :lastname, :gender, :stylistid)";
             this.id = (int) con.createQuery(sql, true)
                     .addParameter("firstname", this.firstName)
                     .addParameter("lastname", this.lastName)
                     .addParameter("gender", this.gender)
+                    .addParameter("stylistid", this.stylistId)
                     .executeUpdate()
                     .getKey();
 
@@ -80,14 +82,15 @@ public Client(String firstName, String lastName, String gender, int stylistId){
         }
     }
 
-    public void update(String firstname, String lastname, String gender, int id) {
+    public void update(String firstname, String lastname, String gender, int id, int stylistId) {
         try(Connection con = DB.sql2o.open()) {
-            String sql = "UPDATE Clients SET firstname = :firstname, lastname = :lastname, gender = :gender WHERE id = :id";
+            String sql = "UPDATE Clients SET firstname = :firstname, lastname = :lastname, gender = :gender, stylistid = :stylistid WHERE id = :id";
             con.createQuery(sql)
                     .addParameter("firstname", firstname)
                     .addParameter("lastname", lastname)
                     .addParameter("gender", gender)
                     .addParameter("id", id)
+                    .addParameter("stylistid", stylistId)
                     .executeUpdate();
         }
     }
