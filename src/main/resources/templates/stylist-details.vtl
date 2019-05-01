@@ -1,0 +1,24 @@
+<div class="col-md-6">
+<h2>$stylist.getfirstName()</h2>
+<h2>$stylist.getmiddleName()</h2>
+<h2>$stylist.getlastName()</h2>
+<h2>$stylist.getresidence()</h2>
+<h2>$stylist.getage()</h2>
+<h2>$stylist.getemail()</h2>
+
+<form action="/stylist/$stylist.getId()/delete" method="post">
+<button type="submit" class="btn btn-danger">Delete</button>
+<a href="/stylist/$stylist.getId()/edit" class="btn btn-outline-success">Edit</a>
+</form>
+</div>
+
+<div class="col-md 6">
+    <ul class="list-group">
+        #foreach($client in $stylist.getClients())
+          <li class="list-group-item">$client.getfirstName</li>
+          <li class="list-group-item">$client.getlastName</li>
+          <li class="list-group-item">$client.getgender</li>
+          <li class="list-group-item">$client.getstylistId</li>
+        #end
+    </ul>
+</div>
