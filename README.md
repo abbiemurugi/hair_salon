@@ -55,6 +55,10 @@ Welcome Page
 
 ![home](https://user-images.githubusercontent.com/40597689/57017219-d6cfa400-6c26-11e9-8918-70343c5ae37f.png)
 
+List For Stylists
+
+![stylists](https://user-images.githubusercontent.com/40597689/57017750-2a42f180-6c29-11e9-9a7e-97c0acc296ac.png)
+
 
 ## Technologies Used
 
