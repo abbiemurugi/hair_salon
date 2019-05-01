@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6cd7285c-abef-4f8c-ba87-d7a5d81af752" name="Default Changelist" comment="" />
+    <list default="true" id="6cd7285c-abef-4f8c-ba87-d7a5d81af752" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -510,10 +512,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="219" />
-    <option name="y" value="400" />
+    <option name="x" value="216" />
+    <option name="y" value="522" />
     <option name="width" value="758" />
-    <option name="height" value="545" />
+    <option name="height" value="569" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -603,7 +605,7 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/kingcubby/Documents/IP/HairSalon/src/main/resources/templates/layout.vtl" />
     <property name="add_unversioned_files" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556711539582" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556712079177" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -738,7 +740,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="219" y="400" width="758" height="545" extended-state="0" />
+    <frame x="218" y="329" width="758" height="371" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.29353932" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -751,12 +753,12 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3277027" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.36690646" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39906833" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.962963" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32962137" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32919255" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.7961631" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.6666667" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32453415" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.7931489" />
