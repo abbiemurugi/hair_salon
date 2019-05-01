@@ -3,6 +3,7 @@ apply plugin: 'application'
 
 archivesBaseName = "hair-salon"
 version = '1.0'
+applicationName = "hair-salon"
 mainClassName = "App"
 
 repositories {
@@ -17,3 +18,13 @@ dependencies {
     compile group: 'org.postgresql', name: 'postgresql', version: "9.4-1201-jdbc41"
     compile group: 'org.apache.velocity', name: 'velocity', version: '1.7'
 }
+
+
+//test {
+//    testLogging {
+//        exceptionFormat = 'full' events "passed" "skipped" "failed"
+//    }
+//}
+
+defaultTasks = ['clean']
+task stage(dependsOn: ['clean', 'installDist'])
