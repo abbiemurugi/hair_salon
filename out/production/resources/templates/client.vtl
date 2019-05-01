@@ -1,13 +1,30 @@
-<h1>Client list!</h1>
+<div class="col-md-8">
+<h2>$stylist.getfirstName()</h2>
+<h2>$stylist.getmiddleName()</h2>
+<h2>$stylist.getlastName()</h2>
+<h2>$stylist.getresidence()</h2>
+<h2>$stylist.getage()</h2>
+<h2>$stylist.email()</h2>
 
-#if ($clients)
-  <ul>
-    #foreach ($client in $clients)
-      <li><a href="/clients/$client.getId()">$client.getfirstName()</a></li>
-    #end
-  </ul>
-#else
-  <p>No clients!</p>
-#end
+<button type="submit" class="btn btn-danger">Delete</button
+<a href="/client/$client.getId()/edit" class="btn btn-outline-success">Edit</a>
+</div>
 
-<a href="/clients/new">Add New Client</a>
+<div class="col-md-4">
+<form action="/stylists/$client.getStylistId()/clients/$client.getId()" method="post">
+  <label for="firstName">firstName</label>
+  <input id="firstName" name="firstName" type="text">
+  <br>
+  <label for="lastName">lastName</label>
+  <input id="lastName" name="lastName" type="text">
+  <br>
+  <label for="gender">gender</label>
+  <input id="gender" name="gender" type="text">
+  <br>
+  <label for="stylistId">stylistId</label>
+  <input id="stylistId" name="stylistId" type="text">
+
+  <button type="submit" class="btn btn-info">Update Client</button>
+</form>
+
+<a href="/stylists/$stylist.getId()">Return to $stylist.getfirstName()</a>
