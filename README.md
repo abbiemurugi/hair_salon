@@ -45,9 +45,9 @@ In PSQL:
 
 CREATE DATABASE hair-salon;
 
-CREATE TABLE Stylist (id serial PRIMARY KEY, firstname varchar, middlename varchar, lastname varchar, Age varchar, Address varchar);
+CREATE TABLE Stylist (id serial PRIMARY KEY, firstname varchar, middlename varchar, lastname varchar, age int, address varchar);
 
-CREATE TABLE Client (id serial PRIMARY KEY, firstname varchar, middlename varchar, lastname varchar, Age varchar, Address varchar);
+CREATE TABLE Client (id serial PRIMARY KEY, firstname varchar, middlename varchar, lastname varchar, age int, address varchar);
 
 CREATE DATABASE hair_salon_test WITH TEMPLATE hair_salon;
 
