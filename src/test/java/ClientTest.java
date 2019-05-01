@@ -37,6 +37,12 @@ public class ClientTest {
     }
 
     @Test
+    public void get_theStylistId_String(){
+        Client myClient = new Client("john", "mutua", "male", 1);
+        assertEquals(1, myClient.getstylistId());
+    }
+
+    @Test
     public void save_returnsTrueIfIdAreTheSame_String() {
         Client myClient = new Client("john", "mutua", "male", 1);
         myClient.save();
@@ -81,7 +87,7 @@ public class ClientTest {
     public void update_updatesClientDescription_true() {
         Client myClient = new Client("caleb", "james", "male", 1);
         myClient.save();
-        myClient.update("caleb", "james", "male", 1);
+        myClient.update("caleb", "james", "male", 6, 1);
         assertEquals("caleb", Client.find(myClient.getId()).getfirstName());
     }
 
