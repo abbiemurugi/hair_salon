@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cd7285c-abef-4f8c-ba87-d7a5d81af752" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/templates/holder.vtl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Stylist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stylist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/stylists.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/stylists.vtl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -51,30 +50,32 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="LICENSE" value="4" />
+          <entry key="Procfile" value="2" />
           <entry key="css" value="8" />
           <entry key="gitignore" value="1" />
-          <entry key="gradle" value="4" />
-          <entry key="java" value="56" />
+          <entry key="gradle" value="8" />
+          <entry key="java" value="59" />
           <entry key="jpg" value="2" />
           <entry key="md" value="4" />
-          <entry key="vtl" value="90" />
+          <entry key="vtl" value="91" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="8" />
           <entry key="Git file" value="1" />
-          <entry key="Groovy" value="4" />
+          <entry key="Groovy" value="8" />
           <entry key="Image" value="2" />
-          <entry key="JAVA" value="56" />
-          <entry key="PLAIN_TEXT" value="98" />
+          <entry key="JAVA" value="59" />
+          <entry key="PLAIN_TEXT" value="101" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="Procfile" value="22" />
           <entry key="css" value="462" />
           <entry key="dummy" value="13" />
-          <entry key="gradle" value="12" />
+          <entry key="gradle" value="51" />
           <entry key="java" value="3853" />
           <entry key="md" value="354" />
           <entry key="vtl" value="2688" />
@@ -83,34 +84,15 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="462" />
-          <entry key="Groovy" value="12" />
+          <entry key="Groovy" value="51" />
           <entry key="JAVA" value="3853" />
-          <entry key="PLAIN_TEXT" value="3055" />
+          <entry key="PLAIN_TEXT" value="3077" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/public/app.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/stylist.vtl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -322,6 +304,10 @@
                 <option name="name" value="help" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="stage" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Assembles and tests this project." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="build" />
@@ -353,9 +339,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6224389369000" />
+        <entry key="$PROJECT_DIR$" value="6224597044000" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="1520494975" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="3631039864" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="307973072" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="2471702649" />
       </map>
@@ -495,7 +481,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/holder.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/success.vtl" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/ClientTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/StylistTest.java" />
@@ -517,6 +502,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/stylists.vtl" />
         <option value="$PROJECT_DIR$/src/main/java/Stylist.java" />
         <option value="$PROJECT_DIR$/src/main/resources/public/app.css" />
+        <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -527,8 +514,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="236" />
-    <option name="y" value="117" />
+    <option name="x" value="248" />
+    <option name="y" value="630" />
     <option name="width" value="758" />
     <option name="height" value="545" />
   </component>
@@ -620,7 +607,7 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/kingcubby/Documents/IP/HairSalon/src/main/resources/templates/layout.vtl" />
     <property name="add_unversioned_files" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556707151371" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556711520594" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -755,9 +742,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="236" y="117" width="758" height="545" extended-state="0" />
+    <frame x="275" y="484" width="758" height="545" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29353932" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.29353932" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -787,37 +774,6 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32838285" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29482073" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Learn" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3277027" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36690646" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32962137" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32919255" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.79658383" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="10" weight="0.32453415" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.7931489" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Gradle" order="5" weight="0.3289256" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32838285" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -844,13 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" lean-forward="true" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
@@ -940,13 +889,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout.vtl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/client-form.vtl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1023,13 +965,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="179" column="77" lean-forward="true" selection-start-line="179" selection-start-column="77" selection-end-line="179" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1040,10 +979,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/app.css">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout.vtl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        <state relative-caret-position="45">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="41" selection-start-column="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="22" selection-start-line="22" selection-start-column="2" selection-end-line="26" selection-end-column="3" />
         </state>
       </provider>
     </entry>
