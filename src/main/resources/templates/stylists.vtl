@@ -1,0 +1,7 @@
+<ul>
+ #foreach ($stylist in $stylists)
+   <a href="stylist/$stylist.getId()/details"> $stylist.getfirstName() </a>
+</ul>
+#else
+  <p>No stylist!</p>
+#endstyle="max-width:30%

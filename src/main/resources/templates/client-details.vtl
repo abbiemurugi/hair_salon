@@ -1,0 +1,28 @@
+<div class="col-md-6">
+    <div class="card-body">
+        <h2>$client.getfirstName()</h2>
+        <h2>$client.getlastName()</h2>
+        <h2>$client.getgender()</h2>
+        <h2>$client.getstylistId()</h2>
+
+<form action="/client/$client.getId()/delete" method="post">
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a href="/client/$client.getId()/edit" class="btn btn-outline-success">Edit</a>
+</form>
+    </div>
+</div>
+
+<div class="col-md 6">
+    <div class="card-body">
+        <ul class="list-group">
+            #foreach($client in $client.getClients())
+              <li class="list-group-item">$stylist.getfirstName</li>
+              <li class="list-group-item">$stylist.getmiddleName</li>
+              <li class="list-group-item">$stylist.getlastName</li>
+              <li class="list-group-item">$stylist.getresidence</li>
+              <li class="list-group-item">$stylist.getage</li>
+              <li class="list-group-item">$stylist.getemail</li>
+            #end
+        </ul>
+    </div>
+</div>
