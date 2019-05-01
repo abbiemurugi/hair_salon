@@ -1,32 +1,31 @@
-<h1>$category.getName() tasks:</h1>
+<div class="container">
 
-<ul>
-  #foreach($task in $category.getTasks())
-   <li><a href="/categories/$category.getId()/tasks/$task.getId()">$task.getDescription()</a></li>
-  #end
-</ul>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+    <th>Firstname</th>
+    <th>Middlename</th>
+    <th>Lastname</th>
+    <th>Residence</th>
+    <th>Age</th>
+    <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    #foreach($stylist in $stylists)
+    <td><a href="stylist/$stylist.getId()/details"> $stylist.getfirstName() </a> </td>
+      <td>$stylist.getmiddleName()</td>
+      <td>$stylist.getlastName()</td>
+      <td>$stylist.getresidence()</td>
+      <td>$stylist.getage()</td>
+      <td>$stylist.getemail()</td>
+    </tr>
+#end
+  </tbody>
+</table>
 
-<a href="/categories/$category.getId()/tasks/new">Add a new task</a>
-<a href="/categories">All categories</a>
 
+<a class="btn btn-light" href="/stylist/new"> Add New Stylist </a>
 
-
-
-
-<h1>$client.getFirstName()</h1>
-<h2>Completed?:  $client.isCompleted()</h2>
-<h2> Belongs to: $stylist.getName() list.</h2>
-
-<h2>Edit client:</h2>
-
-<form action="/stylists/$client.getStylistId()/clients/$client.getId()" method="post">
-  <label for="firstName">FirstName</label>
-  <input id="firstName" name="firstName" type="text">
-  <button type="submit" class="btn btn-info">Update Client</button>
-</form>
-
-<form action="/stylists/$client.getStylistId()/clients/$client.getId()/delete" method="post">
-  <button type="submit" class="btn btn-danger" id="delete-client">Delete Client</button>
-</form>
-
-<a href="/stylists/$stylist.getId()">Return to $stylist.getName()</a>
+ </div>
