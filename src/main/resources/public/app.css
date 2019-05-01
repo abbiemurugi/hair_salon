@@ -21,3 +21,7 @@ font-family: 'Monoton', cursive;
 .navbar{
 background-color: #e3f2fd;
 }
+.table {
+ width:100%;
+ padding-top: 50px;
+}
