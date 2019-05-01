@@ -106,12 +106,12 @@ public class Stylist {
         try(Connection con = DB.sql2o.open()) {
             String sql = "UPDATE Stylists SET firstname = :firstname, middlename = :middlename, lastname = :lastname, residence = :residence, age = :age, email = :email WHERE id = :id";
             con.createQuery(sql)
-                    .addParameter("firstname", firstName)
-                    .addParameter("middlename", this.middleName)
-                    .addParameter("lastname",this.lastName)
-                    .addParameter("residence", this.residence)
-                    .addParameter("age", this.age)
-                    .addParameter("email",this.email)
+                    .addParameter("firstname", firstname)
+                    .addParameter("middlename", middlename)
+                    .addParameter("lastname", lastname)
+                    .addParameter("residence", residence)
+                    .addParameter("age", age)
+                    .addParameter("email", email)
                     .addParameter("id", id)
                     .executeUpdate();
         }
