@@ -55,10 +55,12 @@ public class Stylist {
         }
     }
 
-    public List<Client> every() {
-        String sql = "SELECT * FROM clients WHERE stylists id = :id";
+    public  List<Client> every() {
+        String sql = "SELECT * FROM clients WHERE stylistid = :id";
         try (Connection con = DB.sql2o.open()) {
-            return con.createQuery(sql).executeAndFetch(Client.class);
+            return con.createQuery(sql)
+                    .addParameter("id",this.id)
+                    .executeAndFetch(Client.class);
         }
     }
 
@@ -77,7 +79,7 @@ public class Stylist {
 
     public void save() {
         try(Connection con = DB.sql2o.open())  {
-            String sql = "INSERT INTO stylists (firstname, middlename, lastname, residence, age, email) VALUES (:firstname, middlename :lastname, :residence, :age :email)";
+            String sql = "INSERT INTO stylists (firstname, middlename, lastname, residence, age, email) VALUES (:firstname, :middlename, :lastname, :residence, :age, :email )";
             this.id = (int) con.createQuery(sql, true)
                     .addParameter("firstname", this.firstName)
                     .addParameter("middlename", this.middleName)
