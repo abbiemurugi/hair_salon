@@ -51,6 +51,11 @@ CREATE TABLE Client (id serial PRIMARY KEY, firstname varchar, middlename varcha
 
 CREATE DATABASE hair_salon_test WITH TEMPLATE hair_salon;
 
+Welcome Page
+
+![home](https://user-images.githubusercontent.com/40597689/57017219-d6cfa400-6c26-11e9-8918-70343c5ae37f.png)
+
+
 ## Technologies Used
 
 * IntelliJ IDEA version 8
