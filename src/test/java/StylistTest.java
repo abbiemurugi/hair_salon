@@ -7,7 +7,7 @@ public class StylistTest {
 
     @Before
     public void setUp() {
-        DB.sql2o = new Sql2o("jdbc:postgresql://localhost:5432/to_do_test", "kingcubby", "abbie");
+        DB.sql2o = new Sql2o("jdbc:postgresql://localhost:5432/hair_salon_test", "kingcubby", "abbie");
     }
 
     @After
@@ -45,7 +45,7 @@ public class StylistTest {
     @Test
     public void return_getAge_Integer(){
         Stylist myStylist = new Stylist("mary", "james", "wanjiku", "mwea", 25, "maryjames@gmail.com");
-        assertEquals(22, myStylist.getage());
+        assertEquals(25, myStylist.getage());
     }
 
     @Test
@@ -57,8 +57,8 @@ public class StylistTest {
     @Test
     public void every_returnsEveryInstanceOfClient_String(){
         Stylist myStylist = new Stylist("mary", "james", "wanjiku", "mwea", 25, "maryjames@gmail.com");
-        Client myClient = new Client("john", "mutua", "male", 1);
         myStylist.save();
+        Client myClient = new Client("john", "mutua", "male", myStylist.getId());
         myClient.save();
         assertTrue( myStylist.every().contains(myClient));
 
